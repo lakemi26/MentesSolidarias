@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/navigation'
 import Link from 'next/link';
 import styles from './FormLogin.module.css';
 
@@ -8,6 +8,7 @@ import styles from './FormLogin.module.css';
 const FormLogin = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
   const handleLogin = async () => {
     // Validação básica
@@ -17,8 +18,8 @@ const FormLogin = () => {
     }
 
     // Chamada para o backend (substitua a URL pela sua API)
-    const response = await fetch('http://localhost:8080/', {
-      method: 'GET',
+    const response = await fetch ('http://localhost:8080/', {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -30,9 +31,10 @@ const FormLogin = () => {
       localStorage.setItem('token', 'seu-token-de-autenticacao');
       alert('Login bem-sucedido!');
 
-      router.push('/PosLogin');
+      router.push('/PosLogin'); //rota pós login
     } else {
-      alert('Erro ao fazer login. Verifique suas credenciais.');
+      const errorMessage = await response.text(); // Pode ser um JSON, dependendo da sua API
+      alert(`Erro ao fazer login: ${errorMessage}`);
     }
   };
 
