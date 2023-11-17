@@ -1,0 +1,30 @@
+.footer {
+    background-color: #D8CAFB;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logoContainer {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px; /* ajuste conforme necessário */
+  }
+  
+  .linksContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .linksContainer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .linksContainer a:hover {
+    text-decoration: underline;
+  }

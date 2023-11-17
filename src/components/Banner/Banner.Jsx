@@ -1,8 +1,8 @@
-import styles from './Navbar.BannerHome.css'
+import styles from './Banner.module.css'
 
 function Banner(props) {
   return (
-    <div className={Styles.container}>
+    <div className={styles.container}>
       <img src={props.imageSrc} alt={props.altText} className={styles.container} />
     </div>
   );
