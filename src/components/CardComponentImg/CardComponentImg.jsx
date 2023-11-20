@@ -7,27 +7,27 @@ const CardComponentImg = () => {
       <h1>Transtornos comuns</h1>
       <div className={styles.containerCards}>
         <div className={styles.card}>
-          <img src=".caminho/para/sua/imagem2.jpg" alt="Imagem 1" />
+          <img src="./img/Teste2.png" alt="Imagem 1" />
           <h2>Card 1</h2>
           <p>Conteúdo do Card 1...</p>
         </div>
         <div className={styles.card}>
-          <img src="caminho/para/sua/imagem2.jpg" alt="Imagem 2" />
+          <img src="./img/Teste2.png" alt="Imagem 2" />
           <h2>Card 2</h2>
           <p>Conteúdo do Card 2...</p>
         </div>
         <div className={styles.card}>
-          <img src="caminho/para/sua/imagem3.jpg" alt="Imagem 3" />
+          <img src="./img/Teste2.png" alt="Imagem 3" />
           <h2>Card 3</h2>
           <p>Conteúdo do Card 3...</p>
         </div>
         <div className={styles.card}>
-          <img src="caminho/para/sua/imagem4.jpg" alt="Imagem 4" />
+          <img src="./img/Teste2.png" alt="Imagem 4" />
           <h2>Card 4</h2>
           <p>Conteúdo do Card 4...</p>
         </div>
         <div className={styles.card}>
-          <img src="caminho/para/sua/imagem5.jpg" alt="Imagem 5" />
+          <img src="./img/Teste2.png" alt="Imagem 5" />
           <h2>Card 5</h2>
           <p>Conteúdo do Card 5...</p>
         </div>
