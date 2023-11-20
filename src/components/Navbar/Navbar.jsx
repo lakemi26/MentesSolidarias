@@ -26,8 +26,11 @@ const Navbar = () => {
             <Link className={styles.nav_link} href="/Experiencias">
                 Experiências
             </Link>
-            <Link className={styles.nav_link} href="/Login">
-                Login
+            <Link className={styles.nav_link} href="/LoginPaciente">
+                Paciente
+            </Link>
+            <Link className={styles.nav_link} href="/LoginColaborador">
+                Colaborador
             </Link>
         </div>
   

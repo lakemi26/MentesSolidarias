@@ -75,7 +75,7 @@ const FormPaciente = () => {
           special_paciente: {
             filhos: formData.filhos,
             ocupacao: formData.ocupacao,
-            estado_civil: formData.estadoCivil,
+            estadoCivil: formData.estadoCivil,
             niss: formData.niss,
           },
         }),
@@ -93,11 +93,11 @@ const FormPaciente = () => {
   };
 
   return (
-    <form className='styles.form' onSubmit={handleSubmit}>
-      <label className='styles.label'>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <label className={styles.label}>
         Nome:
         <input 
-          className='styles.input' 
+          className={styles.input} 
           type="text" 
           name="nome" 
           value={formData.nome} 
@@ -109,10 +109,10 @@ const FormPaciente = () => {
         />
       </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       CPF:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="cpf" 
         value={formData.cpf} 
@@ -124,10 +124,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
     Gênero:
     <select 
-      className='styles.input' 
+      className={styles.input} 
       name="genero" 
       value={formData.genero} 
       onChange={handleChange}
@@ -140,10 +140,10 @@ const FormPaciente = () => {
     </select>
   </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Telefone:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="telefone" 
         value={formData.telefone} 
@@ -153,10 +153,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Escolaridade:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="escolaridade" 
         value={formData.escolaridade} 
@@ -166,10 +166,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Data de Nascimento:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="date" 
         name="dataNascimento" 
         value={formData.dataNascimento} 
@@ -178,10 +178,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Email:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="email" 
         name="email" 
         value={formData.email} 
@@ -192,10 +192,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Senha:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="password" 
         name="senha" 
         value={formData.senha} 
@@ -207,10 +207,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       CEP:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="cep" 
         value={formData.cep} 
@@ -220,10 +220,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Endereço:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="endereco" 
         value={formData.endereco} 
@@ -233,10 +233,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Bairro:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="bairro" 
         value={formData.bairro} 
@@ -246,10 +246,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Complemento:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="complemento" 
         value={formData.complemento} 
@@ -258,10 +258,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Número:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="numero" 
         value={formData.numero} 
@@ -271,10 +271,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Cidade:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="cidade" 
         value={formData.cidade} 
@@ -284,10 +284,10 @@ const FormPaciente = () => {
       />
     </label>
 
-    <label className='styles.label'>
+    <label className={styles.label}>
       Estado:
       <input 
-        className='styles.input' 
+        className={styles.input} 
         type="text" 
         name="estado" 
         value={formData.estado} 
@@ -298,10 +298,10 @@ const FormPaciente = () => {
   </label>
 
     {/* Campos especiais Pacientes */}
-  <label className='styles.label'>
+  <label className={styles.label}>
     Filhos:
     <input 
-      className='styles.input' 
+      className={styles.input} 
       type="number" 
       name="filhos" 
       value={formData.filhos} 
@@ -311,10 +311,10 @@ const FormPaciente = () => {
     />
   </label>
 
-  <label className='styles.label'>
+  <label className={styles.label}>
     Ocupação:
     <input 
-      className='styles.input' 
+      className={styles.input} 
       type="text" 
       name="ocupacao" 
       value={formData.ocupacao} 
@@ -324,10 +324,10 @@ const FormPaciente = () => {
     />
   </label>
 
-  <label className='styles.label'>
+  <label className={styles.label}>
     Estado Civil:
     <select 
-      className='styles.input' 
+      className={styles.input} 
       name="estadoCivil" 
       value={formData.estadoCivil} 
       onChange={handleChange}
@@ -341,10 +341,10 @@ const FormPaciente = () => {
     </select>
   </label>
 
-  <label className='styles.label'>
+  <label className={styles.label}>
     NISS:
     <input 
-      className='styles.input' 
+      className={styles.input} 
       type="text" 
       name="niss" 
       value={formData.niss} 

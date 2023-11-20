@@ -28,3 +28,12 @@
   .linksContainer a:hover {
     text-decoration: underline;
   }
+
+  .AncientCode{
+    text-decoration: none;
+    color:#fff;
+  }
+
+  .AncientCode:hover {
+    text-decoration: underline;
+  }

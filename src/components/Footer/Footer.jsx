@@ -9,10 +9,10 @@ const Footer = () => {
       </div>
       <div className={styles.linksContainer}>
         <a href="/">Home</a>
-        <a href="/sobre">Sobre nós</a>
-        <a href="/contato">Contato</a>
+        <a href="/Sobre">Sobre nós</a>
+        <a href="/Contato">Contato</a>
       </div>
-      <p>&copy; 2024 AncientCode. Todos os direitos reservados.</p>
+      <p>&copy; 2023 <a className={styles.AncientCode} href ="/AncientCode" >AncientCode.</a> Todos os direitos reservados.</p>
     </footer>
   );
 };
