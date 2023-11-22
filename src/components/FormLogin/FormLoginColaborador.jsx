@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const FormLoginColaborador = () => {
   const [formData, setFormData] = useState({
-    email: '',
+    cpf: '',
     senha: '',
   });
 
@@ -48,11 +48,11 @@ const FormLoginColaborador = () => {
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit}>
         <label className={styles.label}>
-          Email:
+          CPF:
           <input className={styles.input}
-            type="email" 
-            name="email" 
-            value={formData.email} 
+            type="text" 
+            name="cpf" 
+            value={formData.cpf} 
             onChange={handleChange} 
             required 
           />

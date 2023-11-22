@@ -38,7 +38,7 @@ const FormPaciente = () => {
 
     // Enviar dados para o backend
     try {
-      // Endpoint para enviar o modelo
+      // Endpoint 
       await fetch('http://localhost:8080/', {
         method: 'POST',
         headers: {
