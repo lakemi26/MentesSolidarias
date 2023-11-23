@@ -8,5 +8,33 @@
   padding: 16px;
   margin: 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #4d76ac;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
+.card h2{
+  margin-bottom: 15px;
+  color:#867abc;
+}
+
+.card p{
+  margin-bottom: 10px;
+}
+
+.card a{
+  text-decoration: none;
+  color:#867abc;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card a:hover{
+  text-decoration: underline;
+}
+
+
