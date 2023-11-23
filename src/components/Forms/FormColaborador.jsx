@@ -90,6 +90,7 @@ const FormPaciente = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
+      <h1>Cadastro do Colaborador</h1>
       <label className={styles.label}>
         Nome:
         <input 
@@ -332,7 +333,7 @@ const FormPaciente = () => {
         />
   </label>
       
-      <button type="submit">Enviar</button>
+      <button className={styles.button} type="submit">Enviar</button>
     </form>
   );
 };

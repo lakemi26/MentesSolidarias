@@ -53,7 +53,12 @@ const AgendaColaboradorForm = () => {
   };
 
   return (
+    <div className={styles.container}>
+      <div className={styles.imageContainer}>
+        <img src="./img/AgendaColaborador.jpg" alt="Descrição da imagem" />
+      </div>
     <form className={styles.form} onSubmit={handleSubmit}>
+      <h1>Agenda do Colaborador</h1>
       <div className={styles.checkboxGroup}>
         <label>
           Dias da Semana:
@@ -92,6 +97,7 @@ const AgendaColaboradorForm = () => {
 
       <button className={styles.button} type="submit">Agendar</button>
     </form>
+    </div>
   );
 };
 

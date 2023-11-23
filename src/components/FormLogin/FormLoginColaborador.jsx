@@ -46,6 +46,8 @@ const FormLoginColaborador = () => {
   };
 
   return (
+    <div className={styles.loginColaborador}>
+      <img src="./img/LoginColaborador.jpeg" alt="Banner Colaborador" />
     <div className={styles.formContainer}>
       <h1>Login Colaborador</h1>
       <form onSubmit={handleSubmit}>
@@ -76,8 +78,12 @@ const FormLoginColaborador = () => {
             Cadastre-se
         </Link>
 
+        <br/>
+        <br/>
+
         <button className={styles.button} type="submit">Login</button>
       </form>
+    </div>
     </div>
   );
 };

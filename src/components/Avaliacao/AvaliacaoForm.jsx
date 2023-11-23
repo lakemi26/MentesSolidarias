@@ -6,9 +6,7 @@ const AvaliacaoForm = () => {
   const [formData, setFormData] = useState({
     nomeAtendente: '',
     nota: '',
-    comentario: '',
-    dataConsulta: '',
-    horaConsulta: '',
+    comentario: ''
   });
 
   const handleChange = (e) => {
@@ -35,7 +33,7 @@ const AvaliacaoForm = () => {
       });
 
       if (response.ok) {
-        // Redirecionar para a próxima página (substitua '/proxima-pagina' pelo caminho desejado)
+      
         window.location.href = '/Paciente';
       } else {
         console.error('Erro ao enviar os dados para o backend.');
@@ -46,6 +44,11 @@ const AvaliacaoForm = () => {
   };
 
   return (
+    <div className={styles.container}>
+      <div className={styles.imageContainer}>
+        <img src="./img/AvaliacaoImg.jpeg" alt="Descrição da imagem" />
+      </div>
+      <div className={styles.formContainer}>
     <form className={styles.form} onSubmit={handleSubmit}>
       <label className={styles.label}>
         Nome do Atendente:
@@ -84,30 +87,10 @@ const AvaliacaoForm = () => {
         ></textarea>
       </label>
 
-      <label className={styles.label}>
-        Data da Consulta:
-        <input className={styles.input}
-          type="date"
-          name="dataConsulta"
-          value={formData.dataConsulta}
-          onChange={handleChange}
-          required
-        />
-      </label>
-
-      <label className={styles.label}>
-        Hora da Consulta:
-        <input className={styles.input}
-          type="time"
-          name="horaConsulta"
-          value={formData.horaConsulta}
-          onChange={handleChange}
-          required
-        />
-      </label>
-
       <button className={styles.button} type="submit">Enviar</button>
     </form>
+    </div>
+    </div>
   );
 };
 

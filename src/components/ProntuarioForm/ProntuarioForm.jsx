@@ -51,7 +51,8 @@ const PontuarioForm = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <label>
+      <h1>Prontuário:</h1>
+      <label className={styles.label}>
         Data da Consulta:
         <input
           className={styles.input}
@@ -63,7 +64,7 @@ const PontuarioForm = () => {
         />
       </label>
 
-      <label>
+      <label className={styles.label}>
         Hora da Consulta:
         <input
         className={styles.input}
@@ -75,7 +76,7 @@ const PontuarioForm = () => {
         />
       </label>
 
-      <label>
+      <label className={styles.label}>
         Nome do Profissional:
         <input
         className={styles.input}
@@ -87,7 +88,7 @@ const PontuarioForm = () => {
         />
       </label>
 
-      <label>
+      <label className={styles.label}>
         CPF do Profissional:
         <input
         className={styles.input}
@@ -100,7 +101,7 @@ const PontuarioForm = () => {
         />
       </label>
 
-      <label>
+      <label className={styles.label}>
         Nome do Paciente:
         <input
         className={styles.input}
@@ -112,7 +113,7 @@ const PontuarioForm = () => {
         />
       </label>
 
-      <label>
+      <label className={styles.label}>
         CPF do Paciente:
         <input
         className={styles.input}
@@ -125,7 +126,7 @@ const PontuarioForm = () => {
         />
       </label>
 
-      <label>
+      <label className={styles.label}>
         Diagnóstico:
         <textarea
         className={styles.textarea}
@@ -136,7 +137,7 @@ const PontuarioForm = () => {
         ></textarea>
       </label>
 
-      <label>
+      <label className={styles.label}>
         Remédios (opcional):
         <input
         className={styles.input}
@@ -147,7 +148,7 @@ const PontuarioForm = () => {
         />
       </label>
 
-      <label>
+      <label className={styles.label}>
         Comentários:
         <textarea
         className={styles.textarea}

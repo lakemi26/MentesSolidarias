@@ -78,6 +78,7 @@ const ReceitaForm = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
+      <h1>Receita Virtual</h1>
       <label className={styles.label}>
         Data da Consulta:
         <input

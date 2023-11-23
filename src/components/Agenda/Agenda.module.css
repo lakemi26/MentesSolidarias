@@ -1,13 +1,25 @@
-/* AgendaPacienteForm.module.css */
+.container{
+  display: flex;
+}
+
 .form {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 500px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+.form h1{
+  color: #4d76ac;
+  margin-bottom: 20px;
+}
   
+.checkboxGroup label{
+  color:#4d76ac;
+}
+
+.checkboxGroup input{
+  border-color: #4d76ac;
+}
+
   .checkboxGroup,
   .selectGroup,
   .textAreaGroup {
@@ -19,6 +31,27 @@
   .textAreaGroup textarea {
     margin-top: 8px;
   }
+
+  .selectGroup label{
+    color: #0056b3;
+  }
+
+  .textAreaGroup label{
+    color: #0056b3;
+  }
+
+  .textAreaGroup textarea{
+    height: 80px;
+    width: 100%;
+  }
+
+  .selectGroup select,
+  .textAreaGroup textarea {
+    display: flex;
+    flex-direction: row;
+    border-color: #0056b3;
+  }
+
   
   .button {
     width: 100%;

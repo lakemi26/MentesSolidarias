@@ -1,37 +1,56 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .bigCard {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 60%;
-  }
-  
-  .bigCard h2 {
-    color: #333;
-  }
-  
-  .smallCardsContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .smallCard {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    width: 30%;
-  }
-  
-  .smallCard h3 {
-    color: #333;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.imageContainer img {
+  height: 600px;
+}
+
+.bigCard {
+  box-shadow: 0 4px 8px #4d76ac;
+  border-radius: 8px;
+  padding: 20px;
+  width: 60%;
+  height: 600px;
+}
+
+.bigCard h2 {
+  color:#867abc;
+  margin-bottom: 15px;
+}
+
+.smallCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.smallCard {
+  box-shadow: 0 4px 8px #4d76ac;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 48%; 
+  height: 150px;
+  margin-bottom: 40px; 
+}
+
+.smallCard h3 {
+  color:#867abc;
+  margin-bottom: 15px;
+}
+
+.botao a{
+  color: #867abc;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.botao a:hover{
+  text-decoration: underline;
+}
+

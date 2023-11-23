@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Navbar/>
       <Banner
-        imageSrc='/img/Teste.jpg'
+        imageSrc='/img/Banner.jpeg'
         altText='Banner inicial'
       />
       <CardComponent/>
