@@ -1,8 +1,8 @@
 'use client'
 import { useState } from 'react';
-import styles from './Avaliacao.module.css';
+import styles from './AvaliacaoForm.module.css';
 
-const Avaliacao = () => {
+const AvaliacaoForm = () => {
   const [formData, setFormData] = useState({
     nomeAtendente: '',
     nota: '',
@@ -111,4 +111,4 @@ const Avaliacao = () => {
   );
 };
 
-export default Avaliacao;
+export default AvaliacaoForm;

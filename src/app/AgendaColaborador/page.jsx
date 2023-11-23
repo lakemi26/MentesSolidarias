@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import PaginaPaciente from "@/components/PaginaPaciente/PaginaPaciente";
+import AgendaColaboradorForm from "@/components/Agenda/AgendaColaborador";
 
 
-export default function Paciente() {
+
+export default function AgendaColaborador() {
   return (
     <>
       <Navbar/>
-      <PaginaPaciente/>
+      <AgendaColaboradorForm/>
       <Footer/>
 
     </>

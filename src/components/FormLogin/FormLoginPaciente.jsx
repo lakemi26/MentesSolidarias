@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import styles from './FormLogin.module.css'
 import { useState } from 'react';
 
@@ -46,12 +47,13 @@ const FormLoginPaciente = () => {
 
   return (
     <div className={styles.formContainer}>
+      <h1>Login Paciente</h1>
       <form onSubmit={handleSubmit}>
         <label className={styles.label}>
           CPF:
           <input className={styles.input}
-            type="cpf" 
-            name="text" 
+            type="text" 
+            name="cpf" 
             value={formData.cpf} 
             onChange={handleChange} 
             required 
@@ -68,6 +70,10 @@ const FormLoginPaciente = () => {
             required 
           />
         </label>
+        <p>Ainda não possui cadastro?</p>
+        <Link href="/CadastroPaciente">
+            Cadastre-se
+        </Link>
 
         <button className={styles.button} type="submit">Login</button>
       </form>

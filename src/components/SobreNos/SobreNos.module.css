@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    color: #666;
+  }
+
+  .card a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .card a:hover{
+    text-decoration: underline;
+  }

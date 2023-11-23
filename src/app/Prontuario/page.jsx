@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import PaginaPaciente from "@/components/PaginaPaciente/PaginaPaciente";
+import PontuarioForm from "@/components/ProntuarioForm/ProntuarioForm";
 
 
-export default function Paciente() {
+
+export default function Prontuario() {
   return (
     <>
       <Navbar/>
-      <PaginaPaciente/>
+      <PontuarioForm/>
       <Footer/>
 
     </>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
-        <img src="caminho/para/seu/logo.png" alt="Logo" className={styles.logo} />
+        <h1>Mentes Solidarias</h1>
       </div>
       <div className={styles.linksContainer}>
         <a href="/">Home</a>

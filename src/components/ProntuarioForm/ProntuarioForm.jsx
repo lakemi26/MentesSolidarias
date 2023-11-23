@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styles from "./Prontuario.module.css"
 
-const Pontuario = () => {
+const PontuarioForm = () => {
   const [formData, setFormData] = useState({
     dataConsulta: '',
     horaConsulta: '',
@@ -162,4 +162,4 @@ const Pontuario = () => {
   );
 };
 
-export default Pontuario;
+export default PontuarioForm;

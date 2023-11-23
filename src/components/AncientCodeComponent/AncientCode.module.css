@@ -1,7 +1,7 @@
 .cardContainer {
     display: flex;
-    flex-direction: column; /* Alteração principal para empilhar elementos verticalmente */
-    align-items: center; /* Centralizar os elementos horizontalmente */
+    flex-direction: column;
+    align-items: center; 
   }
   
   .containerCards {

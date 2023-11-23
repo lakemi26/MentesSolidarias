@@ -1,13 +1,12 @@
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import PaginaPaciente from "@/components/PaginaPaciente/PaginaPaciente";
+import ReceitaForm from "@/components/ReceitaForm/ReceitaForm";
 
-
-export default function Paciente() {
+export default function Receita() {
   return (
     <>
       <Navbar/>
-      <PaginaPaciente/>
+      <ReceitaForm/>
       <Footer/>
 
     </>

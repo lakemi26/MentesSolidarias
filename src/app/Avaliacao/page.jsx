@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import PaginaPaciente from "@/components/PaginaPaciente/PaginaPaciente";
+import AvaliacaoForm from "@/components/Avaliacao/AvaliacaoForm";
 
 
-export default function Paciente() {
+
+export default function Avaliacao() {
   return (
     <>
       <Navbar/>
-      <PaginaPaciente/>
+      <AvaliacaoForm/>  
       <Footer/>
 
     </>

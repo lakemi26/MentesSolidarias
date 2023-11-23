@@ -3,19 +3,19 @@ import styles from './CollaboratorsComponent.module.css';
 const CollaboratorsComponent = () => {
     return (
         <div className={styles.collaboratorsContainer}>
-          <h2>Colaboradores</h2>
+          <h1>Colaboradores</h1>
           <div className={styles.imagesContainer}>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <img src="./img/Teste2.png" alt="Colaborador 1" className={styles.image} />
+            <a href="/AncientCode" target="_blank" rel="noopener noreferrer">
+              <img src="./img/ancientcode.png" alt="AncientCode" className={styles.image} />
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <img src="./img/Teste2.png" alt="Colaborador 2" className={styles.image} />
+            <a href="https://www.fiap.com.br/" target="_blank" rel="noopener noreferrer">
+              <img src="./img/fiap.png" alt="Fiap" className={styles.image} />
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <img src="./img/Teste2.png" alt="Colaborador 3" className={styles.image} />
+            <a href="https://www.hapvida.com.br/site/" target="_blank" rel="noopener noreferrer">
+              <img src="./img/hapvida.png" alt="Hapvida" className={styles.image} />
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <img src="./img/Teste2.png" alt="Colaborador 4" className={styles.image} />
+            <a href="https://www.gndi.com.br/" target="_blank" rel="noopener noreferrer">
+              <img src="./img/notredame.png" alt="Notredame" className={styles.image} />
             </a>
           </div>
         </div>

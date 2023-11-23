@@ -29,6 +29,10 @@
     display: none; 
     cursor: pointer;
   }
+
+  .nav_links a:hover {
+    text-decoration: underline;
+  }
   
 
   @media (max-width: 600px) {

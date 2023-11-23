@@ -1,8 +1,8 @@
 'use client'
 import { useState } from 'react';
-import styles from './Receita.module.css';
+import styles from './ReceitaForm.module.css';
 
-const Receita = () => {
+const ReceitaForm = () => {
   const [formData, setFormData] = useState({
     dataConsulta: '',
     horaConsulta: '',
@@ -205,4 +205,4 @@ const Receita = () => {
   );
 };
 
-export default Receita;
+export default ReceitaForm;
