@@ -34,7 +34,7 @@ const AgendaPacienteForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const apiUrl = 'http://seu-backend/api/agendar';
+    const apiUrl = 'http://localhost:8080/agenda';
 
     try {
       const response = await fetch(apiUrl, {

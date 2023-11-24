@@ -20,7 +20,7 @@ const FormLoginPaciente = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const apiUrl = 'http://seu-backend/api/login'; // Substitua pela URL do seu backend
+    const apiUrl = 'http://localhost:8080/login';
 
     try {
       const response = await fetch(apiUrl, {

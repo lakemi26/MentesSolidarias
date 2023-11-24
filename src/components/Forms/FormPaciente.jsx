@@ -36,10 +36,8 @@ const FormPaciente = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Enviar dados para o backend
     try {
-      // Endpoint 
-      await fetch('http://localhost:8080/', {
+      const response = await fetch('http://localhost:8080/paciente', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -61,18 +59,6 @@ const FormPaciente = () => {
             numero: formData.numero,
             cidade: formData.cidade,
             estado: formData.estado,
-          },
-        }),
-      });
-  
-      // Endpoint para enviar especiais do paciente
-      await fetch('http://localhost:8080/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          special_paciente: {
             filhos: formData.filhos,
             ocupacao: formData.ocupacao,
             estadoCivil: formData.estadoCivil,
@@ -82,7 +68,6 @@ const FormPaciente = () => {
       });
 
       if (response.ok) {
-        // Redirecionar para a próxima página (substitua '/proxima-pagina' pelo caminho desejado)
         window.location.href = '/LoginPaciente';
       } else {
         console.error('Erro ao enviar os dados para o backend.');

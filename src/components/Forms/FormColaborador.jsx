@@ -2,7 +2,7 @@
 import styles from './Forms.module.css';
 import { useState } from 'react';
 
-const FormPaciente = () => {
+const FormColaborador = () => {
   const [formData, setFormData] = useState({
     nome: '',
     cpf: '',
@@ -19,7 +19,9 @@ const FormPaciente = () => {
     numero: '',
     cidade: '',
     estado: '',
-    
+    certificacao: '',
+    formacao: '',
+    cnpj: ''
   });
 
   const handleChange = (e) => {
@@ -33,10 +35,8 @@ const FormPaciente = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Enviar dados para o backend
     try {
-      // Endpoint para enviar o modelo
-      await fetch('http://localhost:8080/', {
+      await fetch('http://localhost:8080/profissional', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,27 +58,14 @@ const FormPaciente = () => {
             numero: formData.numero,
             cidade: formData.cidade,
             estado: formData.estado,
-          },
-        }),
-      });
-  
-      // Endpoint para enviar especiais do paciente
-      await fetch('http://localhost:8080/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          special_profissional: {
             certificacao: formData.certificacao,
             formacao: formData.formacao,
             cnpj: formData.cnpj
           },
         }),
       });
-
+  
       if (response.ok) {
-        // Redirecionar para a próxima página (substitua '/proxima-pagina' pelo caminho desejado)
         window.location.href = '/LoginColaborador';
       } else {
         console.error('Erro ao enviar os dados para o backend.');
@@ -294,7 +281,6 @@ const FormPaciente = () => {
       />
   </label>
 
-    {/* Campos especiais Colaboradores */}
     <label className={styles.label}>
     Certificação:
         <input 
@@ -338,4 +324,4 @@ const FormPaciente = () => {
   );
 };
 
-export default FormPaciente;
+export default FormColaborador;

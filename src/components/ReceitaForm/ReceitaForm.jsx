@@ -26,47 +26,50 @@ const ReceitaForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Enviar dados para o backend
+    
     try {
-      // Endpoint 
-      await fetch('http://localhost:8080/', {
+      await fetch('http://localhost:8080/receita', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           tb_receita: {
-            dataConsulta: formData.dataConsulta,
-            horaConsulta: formData.horaConsulta,
-            nomePaciente: formData.nomePaciente,
-            cpfPaciente: formData.cpfPaciente,
-            nomeMedico: formData.nomeMedico,
-            cpfMedico: formData.cpfMedico,
-            nomeRemedio: formData.nomeRemedio,
-            principioAtivo: formData.principioAtivo,
-            frequenciaConsumo: formData.frequenciaConsumo,
-            duracaoTratamento: formData.duracaoTratamento
+            data_hora: formData.dataConsulta,
+            data_hora: formData.horaConsulta,
+            
+
           },
         }),
       });
 
-      await fetch('http://localhost:8080/', {
+      await fetch('http://localhost:8080/medicamento', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          special_profissional: {
-            certificacao: formData.certificacao,
-            formacao: formData.formacao,
-            cnpj: formData.cnpj
+          tb_medicamento: {
+            nome: formData.nomeRemedio,
+            principio_ativo: formData.principioAtivo,
+          },
+        }),
+      });
+
+      await fetch('http://localhost:8080//receitareceitaMedicamento', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id_receita_medicamento: {
+            freq_duracao: formData.frequenciaConsumo,
+            duracao_admin: formData.duracaoTratamento
           },
         }),
       });
 
       if (response.ok) {
-        // Redirecionar para a próxima página (substitua '/proxima-pagina' pelo caminho desejado)
         window.location.href = '/Colaborador';
       } else {
         console.error('Erro ao enviar os dados para o backend.');
@@ -123,7 +126,7 @@ const ReceitaForm = () => {
           name="cpfPaciente"
           value={formData.cpfPaciente}
           onChange={handleChange}
-          placeholder="123.456.789-01" // Adapte conforme o formato desejado
+          placeholder="123.456.789-01"
           required
         />
       </label>
@@ -148,7 +151,7 @@ const ReceitaForm = () => {
           name="cpfMedico"
           value={formData.cpfMedico}
           onChange={handleChange}
-          placeholder="123.456.789-01" // Adapte conforme o formato desejado
+          placeholder="123.456.789-01" 
           required
         />
       </label>

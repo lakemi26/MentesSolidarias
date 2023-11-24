@@ -26,8 +26,7 @@ const PontuarioForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Enviar dados para o backend
-    const apiUrl = 'http://seu-backend/api/pontuar'; // Substitua pela URL do seu backend
+    const apiUrl = 'http://localhost:8080/pronuario';
 
     try {
       const response = await fetch(apiUrl, {
@@ -39,7 +38,6 @@ const PontuarioForm = () => {
       });
 
       if (response.ok) {
-        // Redirecionar para a próxima página (substitua '/proxima-pagina' pelo caminho desejado)
         window.location.href = '/Colaborador';
       } else {
         console.error('Erro ao enviar os dados para o backend.');
@@ -96,7 +94,7 @@ const PontuarioForm = () => {
           name="cpfProfissional"
           value={formData.cpfProfissional}
           onChange={handleChange}
-          placeholder="123.456.789-01" // Adapte conforme o formato desejado
+          placeholder="123.456.789-01"
           required
         />
       </label>
@@ -121,7 +119,7 @@ const PontuarioForm = () => {
           name="cpfPaciente"
           value={formData.cpfPaciente}
           onChange={handleChange}
-          placeholder="123.456.789-01" // Adapte conforme o formato desejado
+          placeholder="123.456.789-01" 
           required
         />
       </label>

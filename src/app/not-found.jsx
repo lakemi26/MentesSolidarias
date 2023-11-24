@@ -1,15 +1,13 @@
-'use client'
-import Link from 'next/link'
+import Footer from '@/components/Footer/Footer'
+import Navbar from '@/components/Navbar/Navbar'
+import NotFoundComponent from '@/components/NotFoundComponent/NotfoundComponent'
 
 export default function NotFound(){
     return(
         <>
-        <h1>404 </h1>
-        <p>Parece que esta página não existe!</p>
-        <Link href="/">
-            Voltar
-        </Link>
-        
+        <Navbar/>
+        <NotFoundComponent/>
+        <Footer/>
         </>
     )
 }

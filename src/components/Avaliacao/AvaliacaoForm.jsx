@@ -20,16 +20,18 @@ const AvaliacaoForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Enviar dados para o backend
-    const apiUrl = 'http://seu-backend/api/avaliacao'; // Substitua pela URL do seu backend
-
     try {
-      const response = await fetch(apiUrl, {
+      await fetch('http://localhost:8080/avaliacao', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          avaliacao: {
+            nota: formData.nota,
+            avaliacao: formData.comentario
+          },
+        }),
       });
 
       if (response.ok) {

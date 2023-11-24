@@ -1,7 +1,14 @@
+'use client'
 import Link from 'next/link';
+import { useState } from 'react';
 import styles from './PaginaPaciente.module.css';
 
 const PaginaPaciente = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handlePopup = () => {
+    setShowPopup(true);
+  };
   return (
 <div className={styles.container}>
         <div className={styles.imageContainer}>
@@ -36,10 +43,25 @@ const PaginaPaciente = () => {
 
           <div className={styles.smallCard}>
             <h3>Próxima consulta</h3>
-            <p>A sua próxima consulta será no dia:</p>
+            <p>A sua próxima consulta será:</p>
+            <br />
+            <div className={styles.botao}>
+              <Link href="#" onClick={handlePopup}>
+                Clique aqui!
+              </Link>
+            </div>
           </div>
         </div>
       </div>
+    
+
+    {/* Pop-up para informar sobre problemas no Google Meet */}
+    {showPopup && (
+      <div className={styles.popup}>
+        <p>O Google Meet está enfrentando problemas no momento. Tente novamente mais tarde.</p>
+        <button onClick={() => setShowPopup(false)}>Fechar</button>
+      </div>
+    )}
     </div>
   );
 };
