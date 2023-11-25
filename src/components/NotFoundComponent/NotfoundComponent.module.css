@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+.container h1{
+    font-size: 80px;
+    color:#867abc;
+}
+
+.container p{
+    font-size: 25px;
+    color:#867abc;
+}
+
+.container img{
+    width: 600px;
+
+}
